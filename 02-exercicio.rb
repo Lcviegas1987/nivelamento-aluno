@@ -36,4 +36,4 @@ m3 = 60
 m4 = 24
 m5 = 365
 idade = m1/m2/m3/m4/m5
-puts idade .to_s + " idade em segundos"
+puts idade .to_s + " idade em anos"
