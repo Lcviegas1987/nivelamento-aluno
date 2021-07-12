@@ -5,8 +5,8 @@ def calcula_hora_ano(horas,dias)
 horas = horas * dias
 return horas
 end 
-horas = calcula_hora_ano(24, 365)
-puts horas
+horas = calcula_hora_ano( 24 , 365)
+puts horas 
 
 puts "quantidade de minutos em uma decada é "
 anos = 10
@@ -18,8 +18,8 @@ def minutos_decada(anos,dias,horas,minutos,segundos)
     minutos = anos * dias * horas * minutos * segundos
     return minutos
 end
-minutos = minutos_decada(10, 365, 24, 60, 60)
-puts minutos 
+minutos = minutos_decada(20, 365, 24, 60, 60)
+puts "minutos em uma decada " + minutos_decada(20, 365, 24, 60,60).to_s
 
 puts "minha idade em segundos é "
 a = 33
@@ -32,16 +32,16 @@ def idade_segundo(a,b,c,d,e)
    return segundos
 end
 segundos = idade_segundo(33, 365, 24, 60, 60)
-puts segundos
+puts "minha idade em segundos "
 
-puts "quantidade de anos "
+puts "quantidade de anos que tem em 1232 milhoes de segundo "
+segundos = 1232000000
 dias = 365
 horas = 24
 minutos = 60
-segundos = 60
-def segundos_2(dias,horas,minutos,segundos)
-    segundos = dias * horas * minutos * segundos
-    return segundos
+def segundos_ano2(segundos,dias,horas,minutos)
+    anos = segundos / dias / horas / minutos
+    return anos
 end
-segundos = segundos_2(365, 24, 60, 60)
-puts segundos 
+anos = segundos_ano2(1232000000, 365, 24, 60)
+    puts anos
