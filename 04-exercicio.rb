@@ -11,7 +11,7 @@ puts diametro
     comprimento = valor_diametro_circulo(r) * Math::PI
     return comprimento
    end
-   comprimento = calcula_comprimento(5)
+   comprimento = calcula_comprimento(10)
 puts comprimento    
 
 puts "A área de um círculo é seu raio ao quadrado vezes o valor da constante matemática PI (3.1415...)"
