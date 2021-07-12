@@ -3,7 +3,7 @@ def valor_diametro_circulo(r)
 diametro = r * 2
 return diametro
 end
-diametro = valor_diametro_circulo (5)   
+diametro = valor_diametro_circulo (10)   
 puts diametro
 
     puts " O comprimento de um círculo é seu diâmetro vezes o valor da constante matemática PI (3.1415...)"
@@ -19,7 +19,7 @@ def area_circulo (r)
     circulo = r ** 2 * Math::PI
     return circulo
 end
-area =  area_circulo (5)
+area =  area_circulo (10)
 puts area 
 
 
