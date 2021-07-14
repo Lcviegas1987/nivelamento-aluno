@@ -38,5 +38,14 @@ def fase_pandemica(taxa_vacinacao, fator_transmissao, taxa_ocupacao)
         return nil
     end
 end
+print "Digite a taxa de vacinacao: "
+taxa_vacinacao = gets .to_f 
+
+print "Digite o fator de transmissao: "
+fator_transmissao = gets .to_f
+
+print "Digite a taxa de ocupacao :"
+taxa_ocupacao = gets .to_f
+
 status_pandemia = fase_pandemica(taxa_vacinacao, fator_transmissao, taxa_ocupacao)
-puts "A fase atual da pandemia é : " + fase_pandemica.to_s
+puts " A fase atual é : " + fase_pandemica(taxa_vacinacao, fator_transmissao, taxa_ocupacao)
