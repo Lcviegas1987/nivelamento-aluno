@@ -28,18 +28,18 @@ def fase_pandemica(taxa_vacinacao, fator_transmissao, taxa_ocupacao)
         return "fase VERMELHA"
     elsif taxa_ocupacao < 0.90 
         return "fase ROXA"
-    elsif taxa_vacinacao > 1.0 
+    elsif taxa_vacinacao <= 0.0 && vacinacao > 1.0
         return "vacinacao invalida "
-    elsif fator_transmissao < 0 
+    elsif fator_transmissao >= 0.0
         return "fator de transmissao inválido "
-    elsif taxa_ocupacao > 1.0 
+    elsif taxa_ocupacao <= 0.0 && ocupacao > 1.0
         return "taxa de ocupacao invalida"
     else
         return nil
     end
 end
 print "Digite a taxa de vacinacao: "
-taxa_vacinacao = gets .to_f 
+taxa_vacinacao = gets .to_f
 
 print "Digite o fator de transmissao: "
 fator_transmissao = gets .to_f
