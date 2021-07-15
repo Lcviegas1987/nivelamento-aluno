@@ -1,25 +1,19 @@
-puts "Bem vindo ao jogo de adivinhação "
-puts "O computador pensou em um número entre 0 e 100 . Tente adivinhar"
+puts "Bem-vindo ao jogo de adivinhação!"
+puts "O computador pensou em um número entre 0 e 100. Tente adivinhar!"
 
 numero = rand (0..100)
 puts "(" + numero.to_s + ")"
 chute = gets.chomp
 
-if chute.to_i < 0 || chute.to_i > 100
-    puts "Numero digitado é invalido"
+puts chute 
+puts chute.to_i
 
-elsif chute .to_i == 0
-    if chute == "0"
-        chute == chute .to_i
+if chute == "0" || (chute .to_i >= 1 && chute.to_i >= 100)
+    if numero == chute.to_i
+        puts "Você acertou"
     else
-    puts "Valor digitado incorreto"
+        puts "Você errou"
     end
+else
+    puts "Chute inválido"
 end
-chute = chute.to_i
-if numero == chute 
-    puts "Acertou"
-else 
-    puts "Errou"
-end
-
-
