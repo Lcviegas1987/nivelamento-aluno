@@ -4,8 +4,8 @@ puts "O computador pensou em um número entre 0 e 100. Tente adivinhar!"
 numero = rand(0..100)
 puts "(" + numero.to_s + ")"
 tentativas = 0
-acertou = false
-while not acertou
+correto = false
+while not correto
     print "Digite um numero: "
     chute = gets.chomp
 
@@ -13,7 +13,7 @@ if chute == "0" || (chute.to_i >= 1 && chute.to_i <= 100)
     tentativas = tentativas + 1
     if numero == chute.to_i
         puts "Acertou!"
-        acertou = true
+        correto = true
     else
     if chute .to_i > numero
         puts "O número chutado foi maior que o pensado, tente novamente : "
