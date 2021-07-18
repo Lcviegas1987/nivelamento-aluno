@@ -5,11 +5,11 @@
 # print "Digite o numero de colunas: "
 # colunas = gets.chomp.to_i
 
+
 for x in (1..10)
-    print "*"
     for y in (1..10)
-        print "x"
+        print " * "
+        print " x "
     end
     puts
 end
-      
