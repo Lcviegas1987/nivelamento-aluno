@@ -7,7 +7,7 @@
 
 
 for x in (1..10)
-    for y in (1..10)
+    for y in (1..x)
         print " * "
         print " X "
     end
