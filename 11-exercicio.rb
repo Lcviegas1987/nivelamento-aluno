@@ -12,5 +12,5 @@ def posicao_no_array (array, elementos)
     return -1
 end
 
-numeros = [2, 4, 6, 8 ,10]
-puts posicao_no_array(numeros, 5)
+numeros = [10, 20, 30, 40, 50, 10]
+puts posicao_no_array(numeros, 10)
