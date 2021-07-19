@@ -19,5 +19,5 @@ end
 
 
 numeros = [10, 20, 30 , 40, 50, 60]
-puts insere_no_array(numeros,11,7)
+puts insere_no_array(numeros,11,6)
 print numeros
