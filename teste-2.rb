@@ -1,69 +1,16 @@
-for x in (1..1)
-    for y in (1..1)
-        print "*"
+# Fazer uma função chamada 'insere_no_array' que recebe um array, um valor qualquer 
+# e a posição alvo como parâmetros e que deve inserir o valor informado na posição alvo, 
+# de modo a 'empurrar para a frente' os demais elementos e ao final retornar true. 
+# Se a posição alvo não estiver no limite do array, a função deve retornar false.
+
+def insere_no_array (array, valor, posicao)
+    for x in (0..array.size)
+        if x == array.size
+            return true
+        end
+        return false
     end
-    puts 
 end
 
-for x in (1..1)
-    for y in (2..3)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..4)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..5)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..6)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..7)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..8)
-        print "*"
-    end
-    puts
-end
-
-for x in (1..1)
-    for y in (2..9)
-        print "*"
-    end
-    puts
-end
-
-for x in (1..1)
-    for y in (2..10)
-        print "*"
-    end
-    puts 
-end
-
-for x in (1..1)
-    for y in (2..11)
-        print "*"
-    end
-    puts 
-end
+numeros = [10, 20, 30 ,40 , 50]
+puts insere_no_array (numeros,100,2)
