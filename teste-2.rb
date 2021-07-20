@@ -4,13 +4,19 @@
 # Se a posição alvo não estiver no limite do array, a função deve retornar false.
 
 def insere_no_array (array, valor, posicao)
-    for x in (0..array.size)
-        if x == array.size
-            return true
-        end
-        return false
+   x = array.size
+   if posicao >= x
+    return false
+   else
+    until x == posicao
+        array[x] = array[x -1]
+        x = x -1
     end
+    array[x] = valor
+    return true
+end
 end
 
-numeros = [10, 20, 30 ,40 , 50]
-puts insere_no_array (numeros,100,2)
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+puts insere_no_array(numeros,11,9)
+print numeros
