@@ -4,8 +4,8 @@
 # Valide se a quantidade é um número maior que zero, se não for, a função deve retornar nil.
 
 def preco_maca(qtd_macas)
-    if qtd_macas == 0 
-        return nil
+    if qtd_macas <= 0 
+        return "nil"
     end
     
     preco_maca = 0.30 * qtd_macas
@@ -17,4 +17,4 @@ def preco_maca(qtd_macas)
     end   
 end
 
-puts preco_maca (12)
+puts preco_maca (0)
