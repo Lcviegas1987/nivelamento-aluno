@@ -8,9 +8,9 @@ chute = gets.chomp
 if chute.to_i < 0 || chute.to_i > 100
     puts "Numero digitado é invalido"
 
-elsif chute .to_i == 0
+elsif chute.to_i == 0
     if chute == "0"
-       chute == chute .to_i
+       chute == chute.to_i
     else
     puts "Valor digitado incorreto"
     end
