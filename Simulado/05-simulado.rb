@@ -8,7 +8,7 @@
 
 
 def mediana(array)
-    x = array.sort
+    x = array.sort()
     n = array.size
     return (x[(n - 1) / 2] + x[n/ 2]) / 2.0
 end

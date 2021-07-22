@@ -4,17 +4,21 @@
 # Valide se a quantidade é um número maior que zero, se não for, a função deve retornar nil.
 
 def preco_maca(qtd_macas)
+  
     if qtd_macas <= 0 
-        return "nil"
+        return nil
+    else
+        if qtd_macas < 12
+            preco = 0.30
+        elsif
+            qtd_macas >= 12
+            preco = 0.25
+        end
+        preco_final = preco * qtd_macas
     end
-    
-    preco_maca = 0.30 * qtd_macas
-    preco_duzia = 0.25 * qtd_macas
-    if qtd_macas < 0 || qtd_macas<12
-        return preco_maca
-    else qtd_macas >= 12
-        return preco_duzia 
-    end   
 end
 
-puts preco_maca (0)
+puts(preco_maca(6)) # deve imprimir 1.8 ou 1.799999...
+puts(preco_maca(12)) # deve imprimir 3.0
+puts(preco_maca(10)) # deve imprimir 3.0
+puts(preco_maca(0) == nil)

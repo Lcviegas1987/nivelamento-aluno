@@ -18,19 +18,44 @@ def remove_da_posicao (array, posicao_alvo)
         aux = []
         array = []
         for x in (limite_inicio .. limite_fim)
-            novo_array[ x - 1 ] = array [x]
+            novo_array[ x - 1 ] = aux[x]
         end
 
         for y in (1..qtd)
             tamanho = array.size
             posicao = rand (1..array.size -1)
-            novo_array [ y - 1] = array [ posicao ]
+            novo_array[ y - 1] = aux[ posicao ]
         end
         return array
     end
 
     def recebe_aposta (limite_inicio, limite_fim)
-        resposta = 
+        numero = gets.chomp
+        confirma = numero.to_i
+        verificar = 0 
+        while verificar == 0 
+            if numero != confirma.to_s || confirma < limite_inicio || confirma > limite_fim
+                puts "Numero escolhido acima do permitido"
+                    numero = gets.chomp
+                    confirma = numero.to_i
+                else
+                    return numero.to_i
+                end
+            end
+        end
+    end
+
+    def obter_apostas(qtd, limite_inicio, limite_fim)
+        array = []
+        aux = []
+        
+        for x in (limite_inicio..limite_fim)
+            aux [x-1] = x
+        end
+
+    
+
+
 
 
 

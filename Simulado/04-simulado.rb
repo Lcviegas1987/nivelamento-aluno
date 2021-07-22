@@ -7,16 +7,18 @@
 # n*1 n*2 n*3 ... n*n
 # Valide se o parâmetro é um número maior que zero, se não for, a função deve imprimir na tela "ARGUMENTO INVÁLIDO"
 
-def imprimir_tabela(numero)
-    for linha in (1..numero)
-        for coluna in (1..linha)
+def imprimir_tabela (numero)
+    if numero <= 0
+        return "Argumento invalido"
+    else
+        for linha in (1..numero)
+            for coluna in (1..linha)
+                print linha * coluna
+                print " "
+            end
+            puts 
         end
-    end
-    if numero > 0  
-    return "Argumento invalido "
-    puts
-    print "Argumento invalido "
     end
 end
 
-puts imprimir_tabela (1)
+imprimir_tabela(5)
